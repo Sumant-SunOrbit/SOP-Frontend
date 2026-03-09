@@ -5,18 +5,21 @@ const getBaseUrl = () => {
   // Priority 1: If VITE_API_URL is defined in .env, use it
   if (window.location.hostname === 'konnect.krisala.com') {
     console.log("Production URL running")
-    return import.meta.env.VITE_API_URL;
+    return 'https://sop-backend-green.vercel.app/api';
+    // return import.meta.env.VITE_API_URL;
   }
 
   // // Priority 2: If running on localhost (development), use local backend
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     console.log("Local URL running")
-    return 'http://localhost:5002/api';
+    return 'https://sop-backend-green.vercel.app/api';
+    // return 'http://localhost:5002/api';
   }
 
   // Priority 3: Fallback for production if variable is missing (hardcoded live URL)
   console.log("Fallback URL running")
-  return 'https://konnect.krisala.com/sop/api';
+  return 'https://sop-backend-green.vercel.app/api';
+  // return 'https://konnect.krisala.com/sop/api';
   // return 'http://localhost:5002/api';
 };
 
