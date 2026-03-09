@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/sop/', // App is served at https://konnect.krisala.com/sop/
+  base: '/', // App is served at https://konnect.krisala.com/sop/
 })

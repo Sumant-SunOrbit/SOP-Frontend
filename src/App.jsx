@@ -39,7 +39,7 @@ function App() {
     <NotificationProvider>
     <AuthProvider>
       <ThemeProvider>
-        <Router basename="/sop">
+        <Router >
           <Routes>
             
             <Route path="/login" element={<Login />} />

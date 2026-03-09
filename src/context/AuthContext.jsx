@@ -48,8 +48,9 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     setUser(null);
-    const base = import.meta.env.VITE_BASE_PATH || '';
-    window.location.href = `${base}/login`;
+    // const base = import.meta.env.VITE_BASE_PATH || '';
+    // window.location.href = `${base}/login`;
+    window.location.href = `/login`;
   };
 
   return (
