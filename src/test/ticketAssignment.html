@@ -1,0 +1,127 @@
+<div style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background-color: #f4f4f4;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; border-collapse: collapse; margin-top: 20px; border: 1px solid #dddddd;">
+    <tr>
+        <td bgcolor="#1D2A69" style="padding: 30px 20px; border-radius: 12px 12px 0 0;" class="rounded-corners">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="padding-bottom: 20px;">
+                        <img src="https://saheelproperties.com/wp-content/uploads/2023/02/cropped-SAHEEL-PRPOERTIES-BEST-BUILDER-IN-04PUNE.png" alt="Company Symbol" width="80" height="80" style="display: block; border: 0;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="color: #ffffff; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+                        Ticket Assignment Notification
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="color: #ffffff; font-size: 16px; font-family: Arial, sans-serif; padding-top: 10px;">
+                        A New Ticket Requires Your Attention
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-top: 15px;">
+                        <div style="width: 60px; height: 3px; background-color: #C8A858; margin: 0 auto;"></div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding: 40px 30px; background-color: #F7F8FC;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="color: #4A4A4A; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;">
+                        <p style="margin: 0;">Hello {{assignedUser.username}},</p>
+                        <p style="margin-top: 15px; margin-bottom: 0;">A new ticket has been assigned to you by 
+                            {{#if assignedBy.username}}
+                            {{assignedBy.username}}
+                            {{else}}
+                            the system
+                            {{/if}}.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #e2e2e2; border-radius: 12px; background-color: #ffffff; padding: 25px;">
+                    <tr>
+                        <td style="font-family: Arial, sans-serif; color: #4A4A4A;">
+                        <h3 style="margin-top: 0; margin-bottom: 20px; font-size: 18px; color: #1D2A69;">Ticket Details:</h3>
+                        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px;">Ticket ID:</td>
+                            <td style="font-size: 15px;">{{ticket.ticketId}}</td>
+                            </tr>
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px;">Title:</td>
+                            <td style="font-size: 15px;">{{ticket.title}}</td>
+                            </tr>
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px; vertical-align: top;">Description:</td>
+                            <td style="font-size: 15px;">{{ticket.description}}</td>
+                            </tr>
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px;">Status:</td>
+                            <td style="font-size: 15px;">{{ticket.status}}</td>
+                            </tr>
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px;">Severity:</td>
+                            <td style="font-size: 15px;">
+                                {{#if ticket.issueSeverity}}
+                                {{ticket.issueSeverity}}
+                                {{else}}
+                                Not specified
+                                {{/if}}
+                            </td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+
+                <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                <tr>
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center" bgcolor="#007BFF" style="border-radius: 8px;">
+                        <a href="{{ticketUrl}}" target="_blank" style="font-size: 18px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 15px 30px; border-radius: 8px; display: inline-block; font-family: Arial, sans-serif;">View Ticket</a>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+
+                    <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                    <tr>
+                        <td style="color: #4A4A4A; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;">
+                            <p style="margin-top: 15px; margin-bottom: 0;">Please review the ticket and take the appropriate action.</p>
+                            <p style="margin-top: 15px; margin-bottom: 0;">Thank you.</p>
+                        </td>
+                    </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td bgcolor="#EEF0F8" style="padding: 20px 30px; border-radius: 0 0 12px 12px;" class="rounded-corners">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="color: #777777; font-size: 12px; font-family: Arial, sans-serif;">
+                        &copy; 2026 Saheel HelpDesk. All rights reserved.<br>
+                        Datta Mandir Rd, Shankar Kalat Nagar, Wakad, Pune, Pimpri-Chinchwad, Maharashtra 411057, India
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </table>
+</div>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background-color: #f4f4f4;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; border-collapse: collapse; margin-top: 20px; border: 1px solid #dddddd;">
+        <tr>
+            <td bgcolor="#1D2A69" style="padding: 30px 20px; border-radius: 12px 12px 0 0;" class="rounded-corners">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="center" style="padding-bottom: 20px;">
+                            <img src="https://saheelproperties.com/wp-content/uploads/2023/02/cropped-SAHEEL-PRPOERTIES-BEST-BUILDER-IN-04PUNE.png" alt="Company Symbol" width="80" height="80" style="display: block; border: 0;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="color: #ffffff; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+                            Ticket Timeline Paused
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="color: #ffffff; font-size: 16px; font-family: Arial, sans-serif; padding-top: 10px;">
+                            An update on your service request.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top: 15px;">
+                            <div style="width: 60px; height: 3px; background-color: #C8A858; margin: 0 auto;"></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 40px 30px; background-color: #F7F8FC;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="color: #4A4A4A; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;">
+                    <p style="margin: 0;">Dear {{#if customerName}}{{customerName}}{{else}}Valued Customer{{/if}},</p>
+                    <p style="margin-top: 15px; margin-bottom: 0;">We would like to inform you that the Turn Around Time (TAT) for your ticket has been temporarily paused. This means the resolution timeline has been extended.</p>
+                    </td>
+                </tr>
+
+                <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                <tr>
+                    <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-radius: 12px; overflow: hidden;" class="rounded-corners">
+                        <tr>
+                        <td width="5" bgcolor="#ff9800"></td>
+                        <td bgcolor="#ffffff" style="padding: 20px 25px; border: 1px solid #EEF0F8; border-left: none; color: #4A4A4A; font-family: Arial, sans-serif; font-size: 15px; line-height: 24px;">
+                            <strong style="color: #e65100;">Pause Information:</strong><br>
+                            <strong>Reason:</strong> {{pauseReason}}<br>
+                            <strong>Paused By:</strong> {{pausedByUser}}<br>
+                            <strong>Date:</strong> {{currentDate}}
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+
+                <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                <tr>
+                    <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #e2e2e2; border-radius: 12px; background-color: #ffffff; padding: 25px;">
+                        <tr>
+                        <td style="font-family: Arial, sans-serif; color: #4A4A4A;">
+                            <h3 style="margin-top: 0; margin-bottom: 20px; font-size: 18px; color: #1D2A69;">Ticket Details:</h3>
+                            <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="160" style="font-weight: bold; font-size: 15px; vertical-align: top;">Ticket ID:</td>
+                                <td style="font-size: 15px;">{{ticket.ticketId}}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Title:</td>
+                                <td style="font-size: 15px;">{{ticket.title}}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Description:</td>
+                                <td style="font-size: 15px;">{{ticket.description}}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Category:</td>
+                                <td style="font-size: 15px;">{{ticket.category}}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Status:</td>
+                                <td style="font-size: 15px;">{{ticket.status}}</td>
+                            </tr>
+                            {{#if ticket.issueSeverity}}
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Issue Severity:</td>
+                                <td style="font-size: 15px;">{{ticket.issueSeverity}}</td>
+                            </tr>
+                            {{/if}}
+                            {{#if ticket.project}}
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Project:</td>
+                                <td style="font-size: 15px;">{{ticket.project}}</td>
+                            </tr>
+                            {{/if}}
+                            {{#if ticket.location}}
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Location:</td>
+                                <td style="font-size: 15px;">{{ticket.location}}</td>
+                            </tr>
+                            {{/if}}
+                            {{#if ticket.unit}}
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Unit:</td>
+                                <td style="font-size: 15px;">{{ticket.unit}}</td>
+                            </tr>
+                            {{/if}}
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Created Date:</td>
+                                <td style="font-size: 15px;">{{formattedCreatedAt}}</td>
+                            </tr>
+                            {{#if formattedTatDeadline}}
+                            <tr>
+                                <td style="font-weight: bold; font-size: 15px; vertical-align: top;">Original Deadline:</td>
+                                <td style="font-size: 15px;">{{formattedTatDeadline}}</td>
+                            </tr>
+                            {{/if}}
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+
+                <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                <tr>
+                    <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-radius: 12px; overflow: hidden;" class="rounded-corners">
+                        <tr>
+                        <td width="5" bgcolor="#2196f3"></td>
+                        <td bgcolor="#ffffff" style="padding: 20px 25px; border: 1px solid #EEF0F8; border-left: none; color: #4A4A4A; font-family: Arial, sans-serif; font-size: 15px; line-height: 24px;">
+                            <strong style="color: #1565c0;">What Happens Next:</strong>
+                            <p style="margin: 10px 0 0 0;">&bull; Your ticket remains active and will be resumed as soon as possible.</p>
+                            <p style="margin: 5px 0 0 0;">&bull; You will be notified when work on your ticket resumes.</p>
+                            <p style="margin: 5px 0 0 0;">&bull; The pause duration will be added to the original deadline.</p>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+
+                <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                <tr>
+                    <td style="color: #4A4A4A; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;">
+                    <p style="margin-top: 15px; margin-bottom: 0;">We appreciate your understanding. If you have urgent concerns, please contact support.</p>
+                    <p style="margin-top: 15px; margin-bottom: 0;">Best regards,<br><strong>The Saheel HelpDesk Team</strong></p>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td bgcolor="#EEF0F8" style="padding: 20px 30px; border-radius: 0 0 12px 12px;" class="rounded-corners">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="center" style="color: #777777; font-size: 12px; font-family: Arial, sans-serif; line-height: 18px;">
+                           &copy; 2026 Saheel HelpDesk. All rights reserved.<br>
+                           Datta Mandir Rd, Shankar Kalat Nagar, Wakad, Pune, Pimpri-Chinchwad, Maharashtra 411057, India
+                           <br><br>
+                           This is an automated message. Please do not reply to this email.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

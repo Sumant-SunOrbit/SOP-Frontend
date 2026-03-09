@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Saheel HelpDesk</title>
+</head>
+<body>
+  <div style="margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; background-color:#f4f4f4;">
+    
+    <table align="center" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px; margin-top:20px; border:1px solid #dddddd; border-collapse:collapse;">
+      
+      <!-- Header -->
+      <tr>
+        <td bgcolor="#1D2A69" style="padding:30px 20px; border-radius:12px 12px 0 0;">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="center" style="color:#ffffff; font-size:28px; font-weight:bold;">
+                Welcome to Saheel HelpDesk
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding-top:15px;">
+                <div style="width:60px; height:3px; background-color:#C8A858; margin:0 auto;"></div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- Body -->
+      <tr>
+        <td style="padding:40px 30px; background-color:#F7F8FC;">
+          <table width="100%" cellpadding="0" cellspacing="0">
+
+            <!-- Greeting -->
+            <tr>
+              <td style="color:#4A4A4A; font-size:16px; line-height:24px;">
+                <p style="margin:0;">Hello {{resident.name}},</p>
+                <p style="margin-top:15px;">
+                  Welcome to <strong>Saheel HelpDesk</strong>! Your account has been successfully created, and you are now ready to manage requests, track tickets, and stay connected with your community.
+                </p>
+              </td>
+            </tr>
+
+            <tr><td height="30">&nbsp;</td></tr>
+
+            <!-- CTA Section -->
+            <tr>
+                <td bgcolor="#EEF0F8" style="padding:35px 35px 0 35px; border-radius:12px;">
+                    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px;">Profile Name:</td>
+                            <td style="font-size: 15px;">{{resident.name}}</td>
+                            </tr>
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px; vertical-align: top;">Mobile:</td>
+                            <td style="font-size: 15px;">{{resident.mobile}}</td>
+                            </tr>
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px;">Email:</td>
+                            <td style="font-size: 15px;">{{resident.email}}</td>
+                            </tr>
+                            <tr>
+                            <td width="140" style="font-weight: bold; font-size: 15px;">Temporary Password:</td>
+                            <td style="font-size: 15px;">{{temporaryPassword}}</td>
+                            </tr>
+                        </table>
+                </td>
+            </tr>
+            <tr>
+              <td bgcolor="#EEF0F8" style="padding:35px; border-radius:12px;">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center">
+                      <table cellpadding="0" cellspacing="0">
+                        
+                        <tr>
+                          <td bgcolor="#007BFF" style="border-radius:8px;">
+                            <a href="{{loginUrl}}" target="_blank"
+                               style="font-size:18px; font-weight:bold; color:#ffffff; text-decoration:none;
+                               padding:15px 30px; display:inline-block; border-radius:8px;">
+                              Login to Your Account
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr><td height="30">&nbsp;</td></tr>
+
+            <!-- Info Box -->
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-radius:12px; overflow:hidden;">
+                  <tr>
+                    <td width="5" bgcolor="#1D2A69"></td>
+                    <td bgcolor="#ffffff" style="padding:20px 25px; border:1px solid #EEF0F8; border-left:none; color:#4A4A4A; font-size:15px; line-height:24px;">
+                      <strong>What you can do next:</strong><br/>
+                      • Raise and track service requests<br/>
+                      • View ticket status in real-time<br/>
+                      • Communicate seamlessly with support teams
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr><td height="20">&nbsp;</td></tr>
+
+            <!-- Security Note -->
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-radius:12px; overflow:hidden;">
+                  <tr>
+                    <td width="5" bgcolor="green"></td>
+                    <td bgcolor="#ffffff" style="padding:20px 25px; border:1px solid #EEF0F8; border-left:none; color:#4A4A4A; font-size:15px; line-height:24px;">
+                      For security purposes, keep your login credentials confidential. If you ever suspect unauthorized access, please reset your password immediately.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+
+      <!-- Footer -->
+      <tr>
+        <td bgcolor="#EEF0F8" style="padding:20px 30px; border-radius:0 0 12px 12px;">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="center" style="color:#777777; font-size:12px;">
+                © 2026 Saheel HelpDesk. All rights reserved.<br/>
+                Datta Mandir Rd, Shankar Kalat Nagar, Wakad, Pune, Pimpri-Chinchwad, Maharashtra 411057, India
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+</html>
