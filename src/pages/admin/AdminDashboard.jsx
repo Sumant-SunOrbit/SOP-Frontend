@@ -22,7 +22,7 @@ const StatCardWidget = ({ title, count, icon: Icon, colorClass }) => (
 
 const AdminDashboard = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 pl-6">
       {/* Page Title & Status */}
       <div className="flex justify-between items-center">
         <div>
@@ -30,10 +30,10 @@ const AdminDashboard = () => {
           <p className="text-[var(--sys-text-muted)]">Overview of system performance</p>
         </div>
         {/* Online Status: Green */}
-        <div className="bg-[var(--sys-glass-surface)] border border-[var(--sys-glass-border)] px-4 py-2 rounded-full flex items-center gap-2">
+        {/* <div className="bg-[var(--sys-glass-surface)] border border-[var(--sys-glass-border)] px-4 py-2 rounded-full flex items-center gap-2">
           <div className="w-2.5 h-2.5 rounded-full bg-[var(--sys-primary)] animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.5)]"></div>
           <span className="text-sm font-bold text-[var(--sys-primary)]">System Online</span>
-        </div>
+        </div> */}
       </div>
 
       {/* Stats Grid */}
